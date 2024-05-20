@@ -62,7 +62,10 @@ export default function SearchForm() {
 
   return (
     <section className="my-20">
-      <form className="flex mb-10 justify-center" onSubmit={searchSong}>
+      <form
+        className="flex flex-col gap-4 sm:flex-row mb-10 justify-center"
+        onSubmit={searchSong}
+      >
         <input
           type="text"
           className="flex-1 grow border-2 border-gray-600 focus:border-green-600 active:border-green-600 p-3 rounded-lg outline-none"
@@ -70,7 +73,7 @@ export default function SearchForm() {
           value={searchTerm}
           onChange={handleChange}
         />
-        <button className="bg-green-600 ml-4 text-white py-3 px-6 rounded-lg">
+        <button className="bg-green-600 text-white py-3 px-6 rounded-lg">
           Search
         </button>
       </form>
