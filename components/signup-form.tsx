@@ -37,7 +37,8 @@ export default function SignupForm() {
   });
 
   const onSubmit = (data: SignupSchema) => {
-    console.log(data);
+    // console.log(data);
+    signupUser(data.email, data.password, data.name);
   };
 
   return (
