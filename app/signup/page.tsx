@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function Signup() {
   return (
-    <main>
+    <main className="container">
       <SignupForm />
     </main>
   );
